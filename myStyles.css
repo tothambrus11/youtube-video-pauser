@@ -1,0 +1,9 @@
+:root {
+    --main-color: #369eaf;
+}
+.ytp-play-progress.ytp-swatch-background-color{
+    background-color: var(--main-color) !important;
+}
+#notification-count{
+    background-color: var(--main-color) !important;
+}

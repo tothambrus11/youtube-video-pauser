@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Auto Pauser",
+  "description": "Pause the video automatically when you scroll down to read comments.",
+  "version": "1.0.1",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://youtube.com/*",
+        "https://www.youtube.com/*"
+      ],
+      "css": ["myStyles.css"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}
